@@ -10,9 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_11_19_032102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "entries", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.string "notes"
+    t.string "telescope_type"
+    t.time "start_time"
+    t.time "end_time"
+    t.string "location"
+    t.string "declination"
+    t.string "right_ascention"
+    t.string "magnification"
+    t.string "seeing_conditions"
+    t.string "filters"
+    t.date "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "entry_id"
+    t.integer "user_id"
+    t.string "image_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "observed_bodies", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end

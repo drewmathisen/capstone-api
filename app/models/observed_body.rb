@@ -1,0 +1,2 @@
+class ObservedBody < ApplicationRecord
+end
