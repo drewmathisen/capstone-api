@@ -1,0 +1,2 @@
+class ObservedBodiesController < ApplicationController
+end

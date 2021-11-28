@@ -1,0 +1,2 @@
+class SpaceLogsController < ApplicationController
+end

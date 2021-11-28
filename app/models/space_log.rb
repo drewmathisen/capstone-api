@@ -1,0 +1,2 @@
+class SpaceLog < ApplicationRecord
+end
