@@ -1,0 +1,5 @@
+### Users Index Action
+GET http://localhost:3000/users
+
+### Users Create Action
+POST http://localhost:3000/users
