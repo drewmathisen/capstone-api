@@ -7,9 +7,9 @@ class UsersController < ApplicationController
 
   def create
     u = User.new(
-      username: "harrow",
-      email: "harrow@ninth.com",
-      password: "password"
+      username: params[:username],
+      email: params[:email],
+      password: params[:password]
     )
     u.save
     render json: u
