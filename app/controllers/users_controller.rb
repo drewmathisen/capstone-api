@@ -11,8 +11,12 @@ class UsersController < ApplicationController
       email: params[:email],
       password: params[:password]
     )
-    u.save
-    render json: u
+
+    if u.save
+      render json: u
+    else
+      render json: u.errors.full_messages
+    end
   end
 
 end
