@@ -1,22 +1,15 @@
 class UsersController < ApplicationController
-
-  def index
-    u = User.all
-    render json: u
-  end
-
   def create
-    u = User.new(
-      username: params[:username],
+    user = User.new(
+      name: params[:name],
       email: params[:email],
-      password: params[:password]
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
     )
-
-    if u.save
-      render json: u
+    if user.save
+      render json: { message: "User created successfully" }, status: :created
     else
-      render json: u.errors.full_messages
+      render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
-
 end

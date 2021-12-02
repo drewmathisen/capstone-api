@@ -6,7 +6,17 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "username": "gideon",
-  "email": "gideon@ninth.com",
+  "name": "harrow",
+  "email": "harrow@ninth.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions Create Action
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "harrow@ninth.com",
   "password": "password"
 }

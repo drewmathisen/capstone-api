@@ -1,6 +1,4 @@
 class User < ApplicationRecord
-  has_many :entries
-  has_many :iages
-
-  validates :username, uniqueness: true
+  has_secure_password
+  validates :email, presence: true, uniqueness: true
 end
