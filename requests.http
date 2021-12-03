@@ -26,3 +26,20 @@ GET http://localhost:3000/entries
 
 ### Entries Create Action
 POST http://localhost:3000/entries
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "title": "Saw Charon today",
+  "notes": "Saw charon today, just like everyday. It was large and ugly as usual",
+  "telescope_type": "N/A",
+  "start_time": "12:00 AM",
+  "end_time": "3:00 AM",
+  "location": "Castle Drearburh",
+  "declination": "21° 04′ 07″",
+  "right_ascention": "15h 08m 13s",
+  "magnification": "N/A",
+  "seeing_conditions": "Poor",
+  "filters": "None",
+  "date": "12/02/21"
+}

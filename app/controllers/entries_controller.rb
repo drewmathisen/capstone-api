@@ -7,23 +7,27 @@ class EntriesController < ApplicationController
 
   def create
     e = Entry.new(
-      user_id: 2,
-      title: "Today I saw a shiny star",
-      notes: "Today at night I saw a shiny star. It was really cool but I wouldn't expect you to understand",
-      telescope_type: "N/A",
-      start_time: "1:30 AM",
-      end_time: "2:00 AM",
-      location: "Castle Drearburh",
-      declination: "7° 24′ 26″",
-      right_ascention: "5h 55m 10s",
-      magnification: "N/A",
-      seeing_conditions: "Fine I guess",
-      filters: "My cool sunglasses",
-      date: "12/02/21",
+      user_id: params[:user_id],
+      title: params[:title],
+      notes: params[:notes],
+      telescope_type: params[:telescope_type],
+      start_time: params[:start_time],
+      end_time: params[:end_time],
+      location: params[:location],
+      declination: params[:declination],
+      right_ascention: params[:right_ascention],
+      magnification: params[:magnification],
+      seeing_conditions: params[:seeing_conditions],
+      filters: params[:filters],
+      date: params[:date]
     )
 
-    e.save
-    render json: e
+    if e.save
+      render json: e
+    else
+      render json: e.errors.full_messages
+    end
+
   end
 
 end
