@@ -20,3 +20,9 @@ Content-Type: application/json
   "email": "harrow@ninth.com",
   "password": "password"
 }
+
+### Entries Index Action
+GET http://localhost:3000/entries
+
+### Entries Create Action
+POST http://localhost:3000/entries

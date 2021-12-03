@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_02_030530) do
+ActiveRecord::Schema.define(version: 2021_12_03_013409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,15 +20,15 @@ ActiveRecord::Schema.define(version: 2021_12_02_030530) do
     t.string "title"
     t.string "notes"
     t.string "telescope_type"
-    t.time "start_time"
-    t.time "end_time"
+    t.string "start_time"
+    t.string "end_time"
     t.string "location"
     t.string "declination"
     t.string "right_ascention"
     t.string "magnification"
     t.string "seeing_conditions"
     t.string "filters"
-    t.date "date"
+    t.string "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
