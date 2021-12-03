@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
   #Sessions routes
   post "/sessions" => "sessions#create"
+
+  #Entries routes
+  get "/entries" => "entries#index"
+  post "/entries" => "entries#create"
 end
