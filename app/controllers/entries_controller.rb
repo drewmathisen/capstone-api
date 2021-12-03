@@ -1,13 +1,14 @@
 class EntriesController < ApplicationController
+  before_action :authenticate_user
 
   def index 
-    e = Entry.all 
+    e = current_user.entries 
     render json: e
   end
 
   def create
     e = Entry.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       title: params[:title],
       notes: params[:notes],
       telescope_type: params[:telescope_type],

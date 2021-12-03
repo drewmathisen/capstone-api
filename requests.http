@@ -1,3 +1,5 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODQ3MjJ9.Ka9vCXu_AhnaFxK2ZmzSX1LVjfFUcRKlEa6-MXY-vlk
+
 ### Users Index Action
 GET http://localhost:3000/users
 
@@ -23,10 +25,13 @@ Content-Type: application/json
 
 ### Entries Index Action
 GET http://localhost:3000/entries
+Authorization: Bearer {{token}}
 
 ### Entries Create Action
 POST http://localhost:3000/entries
-Content-Type: application/json
+Content-T
+ype: application/json
+Authorization: Bearer {{token}}
 
 {
   "user_id": 1,
