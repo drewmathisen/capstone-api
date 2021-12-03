@@ -1,5 +1,5 @@
 class EntriesController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user, only: [:index, :create]
 
   def index 
     e = current_user.entries 
@@ -39,7 +39,8 @@ class EntriesController < ApplicationController
   end
 
   def show
-    e = "in show"
+    e = params[:id]
+    render json: e
   end
   
 end

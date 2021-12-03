@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   #Entries routes
   get "/entries" => "entries#index"
   post "/entries" => "entries#create"
+  get "/entries/:id" => "entries#show"
 end
