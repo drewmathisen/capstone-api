@@ -29,8 +29,7 @@ Authorization: Bearer {{token}}
 
 ### Entries Create Action
 POST http://localhost:3000/entries
-Content-T
-ype: application/json
+Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
@@ -46,5 +45,6 @@ Authorization: Bearer {{token}}
   "magnification": "N/A",
   "seeing_conditions": "Poor",
   "filters": "None",
-  "date": "12/02/21"
+  "date": "12/02/21",
+  "observed_bodies": [1,3]
 }

@@ -24,6 +24,13 @@ class EntriesController < ApplicationController
     )
 
     if e.save
+      params[:observed_bodies].each do |body|
+        s = SpaceLog.new(
+          entry_id: e.id,
+          observed_body_id: body
+        )
+        s.save!
+      end
       render json: e
     else
       render json: e.errors.full_messages
@@ -31,4 +38,8 @@ class EntriesController < ApplicationController
 
   end
 
+  def show
+    e = "in show"
+  end
+  
 end
