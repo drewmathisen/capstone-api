@@ -1,4 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzg1ODQ3MjJ9.Ka9vCXu_AhnaFxK2ZmzSX1LVjfFUcRKlEa6-MXY-vlk
+@token = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzkxODUwNDF9.BROXBIyvdYedDPjLqEFxs9TATb789clNKwcQOnqhiWw
 
 ### Users Index Action
 GET http://localhost:3000/users

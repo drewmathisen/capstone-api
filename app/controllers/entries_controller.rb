@@ -39,7 +39,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-    e = params[:id]
+    e = Entry.find_by(id: params[:id])
     render json: e
   end
   
