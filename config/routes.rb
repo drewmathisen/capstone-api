@@ -13,8 +13,11 @@ Rails.application.routes.draw do
   get "/entries/:id" => "entries#show"
   delete "/entries/:id" => "entries#destroy"
   patch "/entries/:id" => "entries#update"
-
   get "/home" => "entries#home_index"
+
+  #Observed Bodies routes
+  get "/observed_bodies" => "observed_bodies#index"
+  post "/observed_bodies" => "observed_bodies#create"
 
 
 end

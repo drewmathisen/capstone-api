@@ -1,0 +1,9 @@
+###
+get http://localhost:3000/observed_bodies
+###
+post http://localhost:3000/observed_bodies 
+Content-Type: application/json
+
+{
+  "name": "Pluto"
+}
