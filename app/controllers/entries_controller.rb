@@ -6,6 +6,11 @@ class EntriesController < ApplicationController
     render json: e
   end
 
+  def home_index
+    e = Entry.all
+    render json: e
+  end
+
   def create
     e = Entry.new(
       user_id: current_user.id,

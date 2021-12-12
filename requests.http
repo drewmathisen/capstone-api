@@ -54,3 +54,6 @@ GET http://localhost:3000/entries/1
 
 ###
 DELETE http://localhost:3000/entries/9
+###
+
+get http://localhost:3000/home

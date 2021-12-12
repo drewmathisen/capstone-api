@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   delete "/entries/:id" => "entries#destroy"
   patch "/entries/:id" => "entries#update"
 
+  get "/home" => "entries#home_index"
+
 
 end
