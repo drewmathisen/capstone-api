@@ -47,6 +47,28 @@ class EntriesController < ApplicationController
     render json: e
   end
 
+  def update
+    e = Entry.find_by(id: params[:id])
+    e.title = params[:title] || e.title
+    e.notes = params[:notes] || e.notes
+    e.telescope_type = params[:telescope_type] || e.telescope_type
+    e.start_time = params[:start_time] || e.start_time
+    e.end_time = params[:end_time] || e.end_time
+    e.location = params[:location] || e.location
+    e.declination = params[:declination] || e.declination
+    e.right_ascention = params[:right_ascention] || e.right_ascention
+    e.magnification = params[:magnification] || e.magnification
+    e.seeing_conditions = params[:seeing_conditions] || e.seeing_conditions
+    e.filters = params[:filters] || e.filters
+    e.date = params[:date] || e.date
+    
+    if e.save
+      render json: e
+    else 
+      render json: e.errors.full_messages
+    end
+  end
+
   def destroy
     e = Entry.find_by(id: params[:id])
     e.destroy
