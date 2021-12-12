@@ -23,17 +23,21 @@ class EntriesController < ApplicationController
       date: params[:date]
     )
 
+    # if e.save
+    #   params[:observed_bodies].each do |body|
+    #     s = SpaceLog.new(
+    #       entry_id: e.id,
+    #       observed_body_id: body
+    #     )
+    #     s.save!
+    #   end
+    #   render json: e
+    # else
+    #   render json: e.errors.full_messages
+    # end
+
     if e.save
-      params[:observed_bodies].each do |body|
-        s = SpaceLog.new(
-          entry_id: e.id,
-          observed_body_id: body
-        )
-        s.save!
-      end
-      render json: e
-    else
-      render json: e.errors.full_messages
+      render json: e 
     end
 
   end
