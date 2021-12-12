@@ -42,5 +42,11 @@ class EntriesController < ApplicationController
     e = Entry.find_by(id: params[:id])
     render json: e
   end
+
+  def destroy
+    e = Entry.find_by(id: params[:id])
+    e.destroy
+    render json: { message: "Entry Removed!" }
+  end
   
 end
