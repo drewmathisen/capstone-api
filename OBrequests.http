@@ -7,3 +7,5 @@ Content-Type: application/json
 {
   "name": "Pluto"
 }
+### 
+get http://localhost:3000/observed_bodies/19

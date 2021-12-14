@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   #Observed Bodies routes
   get "/observed_bodies" => "observed_bodies#index"
   post "/observed_bodies" => "observed_bodies#create"
+  get "/observed_bodies/:id" => "observed_bodies#show"
 
-
+  #Spacelog routes
+  get "/space_logs" => "space_logs#index"
 end

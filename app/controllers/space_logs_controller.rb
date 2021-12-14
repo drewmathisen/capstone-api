@@ -7,7 +7,7 @@ class SpaceLogsController < ApplicationController
 
   def create
     sl = SpaceLog.new(
-      entry_id: params[:entries]
+      entry_id: params[:entries],
       observed_body_id: params[:observed_body_id]
     )
 
