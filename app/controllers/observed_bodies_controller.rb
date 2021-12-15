@@ -29,4 +29,10 @@ class ObservedBodiesController < ApplicationController
     ob = Entry.find_by(id: params[:id]).observed_bodies
     render json: ob
   end
+
+  def ob_show
+    e = ObservedBody.find_by(id: params[:id]).entries
+    render json: e
+  end
+  
 end

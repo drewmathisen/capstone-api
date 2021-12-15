@@ -61,6 +61,7 @@ class EntriesController < ApplicationController
     e.seeing_conditions = params[:seeing_conditions] || e.seeing_conditions
     e.filters = params[:filters] || e.filters
     e.date = params[:date] || e.date
+    e.observed_bodies = params[:observed_bodies] || e.observed_bodies
     
     if e.save
       render json: e
