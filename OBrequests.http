@@ -9,3 +9,8 @@ Content-Type: application/json
 }
 ### 
 get http://localhost:3000/observed_bodies/19
+###
+get http://localhost:3000/observed_bodies/ob_show/5
+
+
+ 
