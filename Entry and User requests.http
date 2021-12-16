@@ -1,4 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzk1MzM5OTN9.b206eKxu6_aWCeJ2RIfD__BAo0nzPr1YQDidKzw72jw
+@token = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzk3MDg0NDV9.JGnrYv_Ir3WxusKyqqPQM84mQLlxnZpf9mx_LcLE2dI
 
 ### Users Index Action
 GET http://localhost:3000/users
@@ -57,3 +57,31 @@ DELETE http://localhost:3000/entries/9
 ###
 
 get http://localhost:3000/home
+### IMAGE REQUESTS
+### IMAGE INDEX
+get http://localhost:3000/images
+### IMAGE CREATE
+post http://localhost:3000/images
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "entry_id": 1,
+  "name": "test image",
+  "description":"test image",
+  "image_url":"test image"
+}
+### IMAGE SHOW
+get http://localhost:3000/images/1
+### IMAGE EDIT
+patch http://localhost:3000/images/4
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Comet Leonard Before Star Cluster M3",
+  "description":"Taken a week ago in California, USA",
+  "image_url":"https://apod.nasa.gov/apod/image/2112/M3Leonard_Bartlett_3843.jpg"
+}
+### IMAGE DELETE
+delete http://localhost:3000/images/5

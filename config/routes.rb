@@ -23,4 +23,11 @@ Rails.application.routes.draw do
 
   #Spacelog routes
   get "/space_logs" => "space_logs#index"
+
+  #Image Routes
+  get "/images" => "images#index"
+  post "/images" => "images#create"
+  get "/images/:id" => "images#show"
+  patch "/images/:id" => "images#update"
+  delete "images/:id" => "images#destroy"
 end

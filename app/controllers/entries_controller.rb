@@ -1,8 +1,8 @@
 class EntriesController < ApplicationController
-  before_action :authenticate_user, only: [:index, :create]
+  before_action :authenticate_user, only: [:index, :create, :update]
 
   def index 
-    e = current_user.entries.reverse
+    e = current_user.entries
     render json: e
   end
 
