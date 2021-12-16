@@ -2,7 +2,7 @@ class EntriesController < ApplicationController
   before_action :authenticate_user, only: [:index, :create]
 
   def index 
-    e = current_user.entries 
+    e = current_user.entries.reverse
     render json: e
   end
 
