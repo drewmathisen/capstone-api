@@ -1,6 +1,6 @@
 class ObservedBodiesController < ApplicationController
   def index 
-    ob = ObservedBody.all
+    ob = ObservedBody.all.sort_by { |ob| ob.name }
     render json: ob
   end
 
@@ -13,7 +13,7 @@ class ObservedBodiesController < ApplicationController
     end
 
     ob = ObservedBody.new(
-      name: params[:name]
+      name: params[:name].titleize
     )
 
     if n.include? ob.name 
@@ -36,7 +36,7 @@ class ObservedBodiesController < ApplicationController
   end
   
   def search
-    e = ObservedBody.find_by(name: params[:name])
+    e = ObservedBody.find_by(name: params[:name].titleize)
     render json: e
   end
 end
