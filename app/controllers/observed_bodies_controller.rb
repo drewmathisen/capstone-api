@@ -35,4 +35,8 @@ class ObservedBodiesController < ApplicationController
     render json: e
   end
   
+  def search
+    e = ObservedBody.find_by(name: params[:name])
+    render json: e
+  end
 end

@@ -30,4 +30,7 @@ Rails.application.routes.draw do
   get "/images/:id" => "images#show"
   patch "/images/:id" => "images#update"
   delete "images/:id" => "images#destroy"
+
+  #Search Routes
+  get "/bodysearch/:name" => "observed_bodies#search"
 end

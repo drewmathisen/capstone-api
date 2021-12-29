@@ -7,7 +7,7 @@ class EntriesController < ApplicationController
   end
 
   def home_index
-    e = Entry.all
+    e = Entry.all.reverse
     render json: e
   end
 
