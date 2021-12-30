@@ -85,3 +85,5 @@ Authorization: Bearer {{token}}
 }
 ### IMAGE DELETE
 delete http://localhost:3000/images/5
+###
+get http://localhost:3000/user_index/6
