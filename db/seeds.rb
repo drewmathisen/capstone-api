@@ -1,11 +1,11 @@
-User.create!([
-  {name: "harrow", email: "harrow@ninth.com", password_digest: "$2a$12$4x4F1nUoNFIq0BtnK/HBfupybVlQp2f98Bcez1/MUlAGxHHE.fAGu"},
-  {name: "gideon", email: "gideon@ninth.com", password_digest: "$2a$12$5oCBt8SS3xF/Rp5rKTsXCO5GgONL2r6ErSBwt/eaz2yGkadGbAcX2"},
-  {name: "ianthe", email: "ianthe@third.com", password_digest: "$2a$12$hDD81O1mue2YLXHIBSfAMes/DnVn8YlRgaYuiHjcIo2PDt3DnAdru"},
-  {name: "Chandrasekhar", email: "chandrasekhar@space.com", password_digest: "$2a$12$xSVWD3xzYabXyViZxBJRlO4wQPVdIQaCeTwrAU0R1HiMLonVqD8Qm"},
-  {name: "Jocelyn Bell Nurnell", email: "jocelynbell@space.com", password_digest: "$2a$12$/TcLE8AYT.njn.UwddyFpOMfg8XdY75HUM8RGIgDfMDoBAMA2vvKe"},
-  {name: "Drew Mathisen", email: "drewmathisen@space.com", password_digest: "$2a$12$mqLbuEVrWdoyKP/Xvbd.C.d16VFhfdmrqZ5kcoVZuixaMpiO9l992"}
-])
+# User.create!([
+#   {name: "harrow", email: "harrow@ninth.com", password_digest: "$2a$12$4x4F1nUoNFIq0BtnK/HBfupybVlQp2f98Bcez1/MUlAGxHHE.fAGu"},
+#   {name: "gideon", email: "gideon@ninth.com", password_digest: "$2a$12$5oCBt8SS3xF/Rp5rKTsXCO5GgONL2r6ErSBwt/eaz2yGkadGbAcX2"},
+#   {name: "ianthe", email: "ianthe@third.com", password_digest: "$2a$12$hDD81O1mue2YLXHIBSfAMes/DnVn8YlRgaYuiHjcIo2PDt3DnAdru"},
+#   {name: "Chandrasekhar", email: "chandrasekhar@space.com", password_digest: "$2a$12$xSVWD3xzYabXyViZxBJRlO4wQPVdIQaCeTwrAU0R1HiMLonVqD8Qm"},
+#   {name: "Jocelyn Bell Nurnell", email: "jocelynbell@space.com", password_digest: "$2a$12$/TcLE8AYT.njn.UwddyFpOMfg8XdY75HUM8RGIgDfMDoBAMA2vvKe"},
+#   {name: "Drew Mathisen", email: "drewmathisen@space.com", password_digest: "$2a$12$mqLbuEVrWdoyKP/Xvbd.C.d16VFhfdmrqZ5kcoVZuixaMpiO9l992"}
+# ])
 # Entry.create!([
 #   {user_id: 5, title: "Stephan's Quintet", notes: "The first identified compact galaxy group, Stephan's Quintet is featured in this eye-catching image constructed with data drawn from the extensive Hubble Legacy Archive. About 300 million light-years away, only four of these five galaxies are actually locked in a cosmic dance of repeated close encounters. The odd man out is easy to spot, though. The interacting galaxies, NGC 7319, 7318A, 7318B, and 7317 have an overall yellowish cast. They also tend to have distorted loops and tails, grown under the influence of disruptive gravitational tides. But the predominantly bluish galaxy, NGC 7320, is closer, just 40 million light-years distant, and isn't part of the interacting group. Stephan's Quintet lies within the boundaries of the high flying constellation Pegasus. At the estimated distance of the quartet of interacting galaxies, this field of view spans about 500,000 light-years. But moving just beyond this field, up and to the right, astronomers can identify another galaxy, NGC 7320C, that is also 300 million light-years distant. Including it would bring the interacting quartet back up to quintet status.", telescope_type: "Hubble Space Telescope", start_time: "7:39", end_time: "7:45", location: "Space", declination: "+33° 57′ 36″", right_ascention: "22h 35m 57.5s", magnification: "None", seeing_conditions: "N/A", filters: "None", date: "12/18/2021"},
 #   {user_id: 5, title: "Meteors and Auroras over Iceland", notes: "What's going on behind that mountain? Quite a bit. First of all, the mountain itself, named Kirkjufell, is quite old and located in western Iceland near the town of Grundarfjörður. In front of the steeply-sloped structure lies a fjord that had just begun to freeze when the above image was taken -- in mid-December of 2012. Although quite faint to the unaided eye, the beautiful colors of background aurorae became quite apparent on the 25-second exposure. What makes this image of particular note, though, is that it also captures streaks from the Geminids meteor shower -- meteors that might not have been evident were the aurora much brighter. Far in the distance, on the left, is the band of our Milky Way Galaxy, while stars from our local part of the Milky Way appear spread across the background. Tonight the Geminids meteor shower peaks again and may well provide sky enthusiasts with their own memorable visual experiences.", telescope_type: "None", start_time: "7:48", end_time: "7:50", location: "Grundarfjörður", declination: "+32°", right_ascention: "07h 28m", magnification: "None", seeing_conditions: "Fair", filters: "None", date: "12/13/2021"},
@@ -21,52 +21,46 @@ User.create!([
 #   {user_id: 6, title: "Solstice Sun and Milky Way", notes: "Welcome to December's solstice, first day of winter in the north and summer for the southern hemisphere. Astronomical markers of the seasons, solstice and equinox dates are based on the Sun's place in its annual journey along the ecliptic, through planet Earth's sky. At this solstice, the Sun reaches its maximum southern declination of -23.5 degrees today at 15:59 UTC, while its right ascension coordinate on the celestial sphere is 18 hours. That puts the Sun in the constellation Sagittarius in a direction near the center of our Milky Way galaxy. In fact, if you could see today's Solstice Sun against faint background stars and nebulae (that's really hard to do, especially in the daytime ...) your view might look something like this composited panorama. To make it, images of our fair galaxy were taken under dark Namibian night skies, then stitched together in a panoramic view. From a snapshot made on 2015 December 21, the Sun was digitally overlayed as a brilliant star at today's northern winter solstice position, close to the center of the Milky Way.", telescope_type: "Camera", start_time: "8:00", end_time: "8:05", location: "Namibia", declination: " -23.5", right_ascention: "18 hours", magnification: "None", seeing_conditions: "Excellent", filters: "None", date: "12/21/21"},
 #   {user_id: 6, title: "Total Solar Eclipse Below the Bottom of the World", notes: "Yesterday there was a total solar eclipse visible only at the end of the Earth. To capture the unusual phenomenon, airplanes took flight below the clouded seascape of Southern Ocean. The featured image shows one relatively spectacular capture where the bright spot is the outer corona of the Sun and the eclipsing Moon is seen as the dark spot in the center. A wing and engine of the airplane are visible across the left and bottom of the image, while another airplane observing the eclipse is visible on the far left. The dark area of the sky surrounding the eclipsed Sun is called a shadow cone. It is dark because you are looking down a long corridor of air shadowed by the Moon. A careful inspection of the eclipsed Sun will reveal the planet Mercury just to the right. The next total solar eclipse shadow will cross parts of Australia and Indonesia in April of 2023, while the one after that will cross North America in April of 2024.", telescope_type: "", start_time: "", end_time: "", location: "", declination: "", right_ascention: "", magnification: "", seeing_conditions: "", filters: "", date: "12/4/2021"}
 # ])
-# Image.create!([
-#   {name: "The Comet and the Fireball", description: "Image Credit & Copyright: Cory Poole", entry_id: 24, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2112/LeonardMeteor_Poole_2250.jpg"},
-#   {name: "The Pelican Nebula in Red and Blue", description: "Image Credit & Copyright: M. Petrasko, M. Evenden, U. Mishra (Insight Obs.)", entry_id: 25, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2102/Pelican_PetraskoEtAl_3555.jpg"},
-#   {name: "Comet Leonard from Space", description: "Image Credit & Copyright: Zhuoxiao Wang, Yangwang-1 Space Telescope, Origin.Space", entry_id: 26, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2112/LeonardSpace_Yangwang1_1960.jpg"},
-#   {name: "Stephan's Quintet", description: "Image Credit: NASA, ESA, Hubble Legacy Archive;", entry_id: 27, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/HUBBLE_NGC7318_PS2_CROP_INSIGHT3072.jpg"},
-#   {name: "Meteors and Auroras over Iceland", description: "Image Credit & Copyright: James Boardman-Woodend; Annotation: Judy Schmidt", entry_id: 28, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/auroraemeteors_boardman_4591.jpg"},
-#   {name: "Comet Leonard Before Star Cluster M3", description: "Image Credit & Copyright: Dan Bartlett", entry_id: 29, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/M3Leonard_Bartlett_3843.jpg"},
-#   {name: "Postcard from the South Pole", description: "Image Credit & Copyright: Aman Chokshi", entry_id: 30, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/eclipse_apod.jpg"},
-#   {name: "Eclipse on a Polar Day ", description: "Image Credit & Copyright: Stephanie Ziyi Ye", entry_id: 31, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/Eclipseclock-final2.JPG"},
-#   {name: "A Total Eclipse of the Sun", description: "Image Credit & Copyright: Theo Boris, Christian A. Lockwood, David Zimmermann (JM Pasachoff Antarctic Expedition) Compositing: Zev Hoover and Ron Dantowitz (MARS Scientific)", entry_id: 32, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/SOLARECLIPSE2021FORDISTROHighRes.jpg"},
-#   {name: "Comet Hale-Bopp Over Val Parola Pass", description: "Image Credit & Copyright: A. Dimai, (Col Druscie Obs.), AAC", entry_id: 33, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/halebopp_dimai_960.jpg"},
-#   {name: "Space Station Silhouette on the Moon", description: "Image Credit & Copyright: Andrew McCarthy", entry_id: 34, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/IssMoon_McCarthy_1663.jpg"},
-#   {name: "Solstice Sun and Milky Way", description: "Composite Image Credit & Copyright: Stefan Seip (TWAN)", entry_id: 35, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/WinterSolsticeMW_Seip_2980.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: "Image Credit & Copyright: Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 37, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: "Description: Image Credit & Copyright: Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 38, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: "Description: Image Credit & Copyright: Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 39, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: " Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 40, user_id: 6, image_url: " https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: "Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 41, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "Total Solar Eclipse Below the Bottom of the World", description: "Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 42, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"},
-#   {name: "otal Solar Eclipse Below the Bottom of the World", description: "Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 43, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"}
-# ])
-# ObservedBody.create!([
-#   {name: "Comet Leonard"},
-#   {name: "Meteor"},
-#   {name: "Geminid Meteor Shower"},
-#   {name: "Pelican Nebula"},
-#   {name: "Comet Leanard"},
-#   {name: "Satelite"},
-#   {name: "Aurora"},
-#   {name: "Earth"},
-#   {name: "Stephan's Quintet"},
-#   {name: "NGC 7319"},
-#   {name: "Pegasus"},
-#   {name: "Milky Way"},
-#   {name: "Star Cluster M3"},
-#   {name: "Sun"},
-#   {name: "Moon"},
-#   {name: "Eclipse"},
-#   {name: "Solar Corona"},
-#   {name: "Comet Hale-Bopp"},
-#   {name: "International Space Station"},
-#   {name: "Sagittarius"},
-#   {name: "Mercury"},
-#   {name: "Sun "},
-#   {name: "Pluto"}
-# ])
+Image.create!([
+  {name: "The Comet and the Fireball", description: "Image Credit & Copyright: Cory Poole", entry_id: 5, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2112/LeonardMeteor_Poole_2250.jpg"},
+  {name: "The Pelican Nebula in Red and Blue", description: "Image Credit & Copyright: M. Petrasko, M. Evenden, U. Mishra (Insight Obs.)", entry_id: 6, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2102/Pelican_PetraskoEtAl_3555.jpg"},
+  {name: "Comet Leonard from Space", description: "Image Credit & Copyright: Zhuoxiao Wang, Yangwang-1 Space Telescope, Origin.Space", entry_id: 7, user_id: 4, image_url: "https://apod.nasa.gov/apod/image/2112/LeonardSpace_Yangwang1_1960.jpg"},
+  {name: "Stephan's Quintet", description: "Image Credit: NASA, ESA, Hubble Legacy Archive;", entry_id: 1, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/HUBBLE_NGC7318_PS2_CROP_INSIGHT3072.jpg"},
+  {name: "Meteors and Auroras over Iceland", description: "Image Credit & Copyright: James Boardman-Woodend; Annotation: Judy Schmidt", entry_id: 2, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/auroraemeteors_boardman_4591.jpg"},
+  {name: "Comet Leonard Before Star Cluster M3", description: "Image Credit & Copyright: Dan Bartlett", entry_id: 3, user_id: 5, image_url: "https://apod.nasa.gov/apod/image/2112/M3Leonard_Bartlett_3843.jpg"},
+  {name: "Postcard from the South Pole", description: "Image Credit & Copyright: Aman Chokshi", entry_id: 4, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/eclipse_apod.jpg"},
+  {name: "Eclipse on a Polar Day ", description: "Image Credit & Copyright: Stephanie Ziyi Ye", entry_id: 8, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/Eclipseclock-final2.JPG"},
+  {name: "A Total Eclipse of the Sun", description: "Image Credit & Copyright: Theo Boris, Christian A. Lockwood, David Zimmermann (JM Pasachoff Antarctic Expedition) Compositing: Zev Hoover and Ron Dantowitz (MARS Scientific)", entry_id: 9, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/SOLARECLIPSE2021FORDISTROHighRes.jpg"},
+  {name: "Comet Hale-Bopp Over Val Parola Pass", description: "Image Credit & Copyright: A. Dimai, (Col Druscie Obs.), AAC", entry_id: 10, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/halebopp_dimai_960.jpg"},
+  {name: "Space Station Silhouette on the Moon", description: "Image Credit & Copyright: Andrew McCarthy", entry_id: 11, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/IssMoon_McCarthy_1663.jpg"},
+  {name: "Solstice Sun and Milky Way", description: "Composite Image Credit & Copyright: Stefan Seip (TWAN)", entry_id: 12, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/WinterSolsticeMW_Seip_2980.jpg"},
+  {name: "Total Solar Eclipse Below the Bottom of the World", description: "Image Credit & Copyright: Petr Horálek (ESO Photo Ambassador, Inst. of Physics in Opava) ; Acknowledgement: Xavier Jubier", entry_id: 13, user_id: 6, image_url: "https://apod.nasa.gov/apod/image/2112/EclipseAntarctica_Horalek_1500.jpg"}
+])
+ObservedBody.create!([
+  {name: "Comet Leonard"},
+  {name: "Meteor"},
+  {name: "Geminid Meteor Shower"},
+  {name: "Pelican Nebula"},
+  {name: "Comet Leanard"},
+  {name: "Satelite"},
+  {name: "Aurora"},
+  {name: "Earth"},
+  {name: "Stephan's Quintet"},
+  {name: "NGC 7319"},
+  {name: "Pegasus"},
+  {name: "Milky Way"},
+  {name: "Star Cluster M3"},
+  {name: "Sun"},
+  {name: "Moon"},
+  {name: "Eclipse"},
+  {name: "Solar Corona"},
+  {name: "Comet Hale-Bopp"},
+  {name: "International Space Station"},
+  {name: "Sagittarius"},
+  {name: "Mercury"},
+  {name: "Sun "},
+  {name: "Pluto"}
+])
 # SpaceLog.create!([
 #   {entry_id: 9, observed_body_id: 1},
 #   {entry_id: 9, observed_body_id: 3},
